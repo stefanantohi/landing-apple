@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
 import { MackbookModel } from "./models/Macbook";
 import MackbookModel14 from "./models/MackbookModel14";
+import StudioLights from "./StudioLights";
 
 export default function ProductViewer() {
   const { color, scale, setColor, setScale } = useMacBookStore();
@@ -61,6 +62,7 @@ export default function ProductViewer() {
           camera={{ position: [0, 2, 5], fov: 50, near: 0.1, far: 100 }}
         >
           <ambientLight intensity={1} />
+          <StudioLights />
           <MackbookModel14 scale={0.06} position={[-1, 0, 0]} />
           <OrbitControls enableZoom={false} />
         </Canvas>
