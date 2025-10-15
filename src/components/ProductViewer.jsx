@@ -19,7 +19,7 @@ export default function ProductViewer() {
         <h2 className="text-center">Take a better look</h2>
         <div className="controls">
           <p className="info text-xl">
-            MacBook Pro | Available in 14" & 16" in Space Gray * Black
+            MacBook Pro | Available in 14" & 16" in Space Gray & Black
           </p>
           <div className="flex-center gap-5 mt-5">
             <div className="color-control">
